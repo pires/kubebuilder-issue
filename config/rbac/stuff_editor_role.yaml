@@ -1,0 +1,26 @@
+# permissions to do edit stuffs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: stuff-editor-role
+rules:
+- apiGroups:
+  - example.pires.github.com
+  resources:
+  - stuffs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - example.pires.github.com
+  resources:
+  - stuffs/status
+  verbs:
+  - get
+  - patch
+  - update

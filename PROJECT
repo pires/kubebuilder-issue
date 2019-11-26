@@ -1,0 +1,7 @@
+domain: pires.github.com
+repo: pires.github.com/example
+resources:
+- group: example
+  kind: Stuff
+  version: v1alpha1
+version: "2"

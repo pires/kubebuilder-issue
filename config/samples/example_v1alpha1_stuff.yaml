@@ -1,0 +1,7 @@
+apiVersion: example.pires.github.com/v1alpha1
+kind: Stuff
+metadata:
+  name: stuff-sample
+spec:
+  # Add fields here
+  foo: bar

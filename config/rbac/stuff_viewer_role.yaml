@@ -1,0 +1,20 @@
+# permissions to do viewer stuffs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: stuff-viewer-role
+rules:
+- apiGroups:
+  - example.pires.github.com
+  resources:
+  - stuffs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - example.pires.github.com
+  resources:
+  - stuffs/status
+  verbs:
+  - get
