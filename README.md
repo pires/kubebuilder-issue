@@ -1,3 +1,6 @@
+- `controller-gen` v0.2.4
+- `kubebuilder` v2.2.0
+
 ```
 go mod init pires.github.com/example
 
